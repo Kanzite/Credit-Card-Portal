@@ -1,38 +1,267 @@
-.App {
-  text-align: center;
+.main {
+	height: 100%;
+	display: table;
+	width: 100%;
+	font-family: Montserrat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro {
+	width: 65%;
+	margin: auto;
+	padding: 40px 40px;
+	background-color: white;
+	float: center;
+	text-align: center;
+	border-radius: 12px;
+	min-height: 450px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.head {
+	font-weight: bold;
+	font-size: 30px;
+	color: #1C1D26;
+	display: inline;
+	letter-spacing: 2px;
+	user-select: none;
+	width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.headsmall {
+	font-size: 20px;
+	display: inline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.left {
+	width: 45%;
+	border: 0px solid black;
+	margin-top: 20px;
+	text-align: left;
+	padding: 20px;
+}
+
+.right {
+	display: inline;
+	width: 45%;
+	border: 0px solid black;
+	margin-top: 20px;
+	text-align: left;
+	padding: 20px;
+}
+
+.formcard {
+	text-align: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.card {
+	text-align: center;
+}
+
+.texthead {
+	font-size: 15px;
+	font-weight: bold;
+	color: #1C1D26;
+	user-select: none;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.textinp {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline;
+	margin: 20px auto;
+	padding: 10px;
+	width: 80%;
+	outline: 0;
+	box-shadow: none;
+	border: 0;
+	border-bottom: 2px solid rgba(28, 29, 38, 0.5);
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	transition-duration: 1s;
+	letter-spacing: 2px;
+}
+
+.textinp:focus {
+	border-color: #38ef7d;
+}
+
+.textinp:focus:invalid {
+	border-color: red;
+}
+
+.exp {
+	margin-right: 60px;
+	width: 40%;
+}
+
+.cvv {
+	width: 20%;
+}
+
+.buttonsubmit {
+	background-color: rgba(28, 29, 38, 0.8);
+	border: none;
+	outline: none;
+	color: white;
+	width: 30%;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Montserrat;
+	font-size: 16px;
+	display: inline;
+	margin: 20px auto;
+	transition-duration: 1s;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.buttonsubmit:hover {
+	background-color: rgba(28, 29, 38, 1);
+}
+
+.buttonsubmit:focus {
+	border: none;
+	outline: none;
+	background-color: rgba(28, 29, 38, 1);
+}
+
+.buttonsubmit::-moz-focus-inner {
+	border: none;
+	outline: none;
+}
+
+.cardbody {
+	background-image: linear-gradient(25deg, #383A4A, #1C1D26);
+	border-radius: 10px;
+	width: 320px;
+	height: 175px;
+	margin: 40px auto;
+	color: white;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-align: left;
+	padding: 15px;
+	letter-spacing: 2px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.barone {
+	width: 350px;
+	height: 40px;
+	margin: 20px 0 0 -15px;
+	background-color: #111111;
+}
+
+.bartwo {
+	width: 200px;
+	height: 40px;
+	margin: 20px auto;
+	background-color: #999999;
+}
+
+.chip {
+	float: left;
+	margin: 10px 0 0 20px;
+	width: 15%;
+	height: 30px;
+	border-radius: 4px;
+	background-image: linear-gradient(25deg, #BF953F, #B38728);
+}
+
+.texttype {
+	font-size: 20px;
+	float: right;
+	margin: 10px 10px 0 0;
+}
+
+.textcardnumber {
+	margin: 70px 0 0 20px;
+}
+
+.textname {
+	margin: 20px 0 0 20px;
+}
+
+.textexpiry {
+	margin: 20px 0 0 20px;
+}
+
+.textcvv {
+	float: right;
+	margin: -40px 20px 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.intro {
+		width: 300px;
+	}
+	
+	.left {
+		padding: 0;
+		width: 100%;
+	}
+	
+	.right {
+		padding: 0;
+		width: 100%;
+	}
+	
+	.texthead {
+		margin-bottom: 10px;
+	}
+	
+	.textinp {
+		margin-top: 10px;
+	}
+	
+	.exp {
+		margin-right: 10px;
+		width: 50%;
+	}
+	
+	.buttonsubmit {
+		width: 50%;
+	}
+	
+	.cardbody {
+		margin: 20px auto;
+		width: 270px;
+	}
+	
+	.texttype {
+		font-size: 15px;
+	}
+	
+	.barone {
+		width: 300px;
+	}
+	
+	.textcvv {
+		margin-right: 40px
+	}
+	
+}
+
+.active {
+	opacity: 1;
+	transform: translateY(10px);
 }
