@@ -265,3 +265,14 @@
 	opacity: 1;
 	transform: translateY(10px);
 }
+
+.fade-appear {
+	opacity: 0;
+	transform: translateY(-10px);
+}
+
+.fade-appear.fade-appear-active {
+	opacity: 1;
+	transform: translateY(10px);
+	transition: 600ms;
+}

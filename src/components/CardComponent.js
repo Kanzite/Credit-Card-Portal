@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 class Card extends Component {
 
@@ -11,12 +12,6 @@ class Card extends Component {
 		this.defaultname = 'FULL NAME';
 		this.defaultexpiry = '**/**';
 		this.defaultcvv = '***';
-	}
-
-	componentDidMount() {
-		setTimeout(() => {
-			this.cardref.current.classList.add('active');
-		}, 300);
 	}
 
 	Out(name) {
@@ -38,21 +33,25 @@ class Card extends Component {
 	CardInstance() {
 		if(this.props.state.show === true)
 			return(
-				<section className="cardbody" ref={this.cardref}>
-					<section className="chip"> </section>
-					<section className="texttype"> { this.props.state.type } </section>
-					<section className="textcardnumber"> { this.Out('cardnumber') } </section>
-					<section className="textname"> { this.Out('name') } </section>
-					<section className="textexpiry"> { this.Out('expiry') } </section>
-				</section>
+				<CSSTransition key = {1} in={true} classNames="fade" enter={false} exit={false} appear={true} timeout={1000}>
+					<section className="cardbody active" ref={this.cardref}>
+						<section className="chip"> </section>
+						<section className="texttype"> { this.props.state.type } </section>
+						<section className="textcardnumber"> { this.Out('cardnumber') } </section>
+						<section className="textname"> { this.Out('name') } </section>
+						<section className="textexpiry"> { this.Out('expiry') } </section>
+					</section>
+				</CSSTransition>
 			);
 		else {
 			return(
-				<section className="cardbody" ref={this.cardref}>
-					<section className="barone"> </section>
-					<section className="bartwo"> </section>
-					<section className="textcvv"> { this.Out('cvv') } </section>
-				</section>
+				<CSSTransition key = {2} in={true} classNames="fade" enter={false} exit={false} appear={true} timeout={1000}>
+					<section className="cardbody active" ref={this.cardref}>
+						<section className="barone"> </section>
+						<section className="bartwo"> </section>
+						<section className="textcvv"> { this.Out('cvv') } </section>
+					</section>
+				</CSSTransition>
 			);
 		}
 	}
