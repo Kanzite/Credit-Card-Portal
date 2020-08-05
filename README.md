@@ -13,17 +13,17 @@ React, JavaScript
 Dependencies: react, react-dom, react-scripts, react-transition-group
 
 ## Project Video
-<img src="https://i.imgur.com/Fb8KcEl.gif" height="384" width="668" alt="Project Video">
+<img src="https://i.imgur.com/Fb8KcEl.gif" width="668" alt="Project Video">
 
 ## Screenshots
 1. Landing View
-<img src="https://i.imgur.com/qeKrefS.png" height="384" width="668" alt="Screenshot One">
+<img src="https://i.imgur.com/qeKrefS.png" width="668" alt="Screenshot One">
 
 2. Front Side
-<img src="https://i.imgur.com/eiaQE2R.png" height="384" width="668" alt="Screenshot Two">
+<img src="https://i.imgur.com/eiaQE2R.png" width="668" alt="Screenshot Two">
 
 3. Back Side
-<img src="https://i.imgur.com/BBDexHV.png" height="384" width="668" alt="Screenshot Three">
+<img src="https://i.imgur.com/BBDexHV.png" width="668" alt="Screenshot Three">
 
 ## Instructions
 
