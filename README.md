@@ -10,8 +10,10 @@ Developed the interface with fluid transitions, including fields such as Card Nu
 ## Tech Stack
 React, JavaScript
 
+Dependencies: react, react-dom, react-scripts, react-transition-group
+
 ## Project Video
-<img src="https://i.imgur.com/Fb8KcEl.gif" height="384" width="668" alt="Project VIdeo">
+<img src="https://i.imgur.com/Fb8KcEl.gif" height="384" width="668" alt="Project Video">
 
 ## Screenshots
 1. Landing View
