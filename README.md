@@ -11,17 +11,17 @@ Developed the interface with fluid transitions, including fields such as Card Nu
 React, JavaScript
 
 ## Project Video
-<img src="https://drive.google.com/uc?export=view&id=1cv7plImm1aprVHawj1kuR5hl3EnrB93D" height="384" width="668">
+<img src="https://i.imgur.com/Fb8KcEl.gif" height="384" width="668" alt="Project VIdeo">
 
 ## Screenshots
 1. Landing View
-<img src="https://drive.google.com/uc?export=view&id=1TSuCbYfEW5_5o_S5F58msPEUsKP5QrwD" height="384" width="668" alt="Screenshot One">
+<img src="https://i.imgur.com/qeKrefS.png" height="384" width="668" alt="Screenshot One">
 
 2. Front Side
-<img src="https://drive.google.com/uc?export=view&id=1G5nZQy7q21ZE6Khh9OCtOfOwrIEedvLI" height="384" width="668" alt="Screenshot Two">
+<img src="https://i.imgur.com/eiaQE2R.png" height="384" width="668" alt="Screenshot Two">
 
 3. Back Side
-<img src="https://drive.google.com/uc?export=view&id=12Ki0FrCaFq-H-PU_qI_qIAv462wrfShW" height="384" width="668" alt="Screenshot Three">
+<img src="https://i.imgur.com/BBDexHV.png" height="384" width="668" alt="Screenshot Three">
 
 ## Instructions
 
